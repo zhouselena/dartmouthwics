@@ -1,0 +1,40 @@
+/**************************** global styling ****************************/
+
+.background {
+  width: 100%;
+  height: 100vh;
+}
+
+/**************************** global navigation bar ****************************/
+
+.logo {
+  width: 100px;
+}
+
+.navbar {
+  width: 75%;
+  margin: auto;
+  padding: 35px 0;
+}
+
+.navbar ul {
+  padding-inline-start: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  list-style: none;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  color: #00713d;
+}
+
+.navbar ul li:hover:after {
+  color: #00713d;
+}
