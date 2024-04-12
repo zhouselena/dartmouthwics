@@ -1,3 +1,5 @@
+// hamburger menu
+
 // scroll to section
 
 function scrollToSection(id) {
