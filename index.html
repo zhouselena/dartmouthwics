@@ -17,11 +17,7 @@
   <body>
     <div class="navbar">
       <ul>
-        <li>
-          <a href="index.html">
-            <img src="assets/wicslogo.png" class="logo" />
-          </a>
-        </li>
+        <img src="assets/wicslogo.png" class="logo" />
         <li class="selected"><a href="index.html">Home</a></li>
         <li><a href="team.html">Our Team</a></li>
         <li><a href="javascript:scrollToEvents()">Events</a></li>
@@ -43,7 +39,13 @@
           <button type="button" id="eventsbutton" onclick="scrollToEvents()">
             EVENTS HERE!
           </button>
-          <button type="button" id="getinvolved">GET INVOLVED</button>
+          <button
+            type="button"
+            id="getinvolved"
+            onclick="window.open('https://web.groupme.com/join_group/45904252/ilCZgi', '_blank');"
+          >
+            GET INVOLVED
+          </button>
         </div>
       </div>
       <img src="assets/teampic.png" id="teampic" />
@@ -67,7 +69,6 @@
       </h1>
     </div>
     <div class="socialmediapreview">
-      <!-- turn into carousel eventually -->
       <div id="instagram" class="socialmediaposts"></div>
     </div>
     <script
@@ -77,5 +78,6 @@
     ></script>
     <script async src="//www.instagram.com/embed.js"></script>
     <script src="main.js"></script>
+    <div class="footer"><hi>testing footer</hi></div>
   </body>
 </html>
