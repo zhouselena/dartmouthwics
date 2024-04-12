@@ -1,3 +1,12 @@
+// scroll to events
+
+function scrollToEvents() {
+  const section = document.getElementById("events");
+  section.scrollIntoView();
+}
+
+// embed ig posts
+
 function embedIGPosts(data) {
   var igcontainer = document.getElementById("instagram");
 

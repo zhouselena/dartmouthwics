@@ -24,7 +24,7 @@
         </li>
         <li class="selected"><a href="index.html">Home</a></li>
         <li><a href="team.html">Our Team</a></li>
-        <li><a href="">Events</a></li>
+        <li><a href="javascript:scrollToEvents()">Events</a></li>
         <li><a href="resources.html">Resources</a></li>
         <li>
           <button type="button">CONTACT US</button>
@@ -40,13 +40,15 @@
           updated with us through our upcoming events and social media pages!
         </p>
         <div class="buttonstack">
-          <button type="button" id="events">EVENTS HERE!</button>
+          <button type="button" id="eventsbutton" onclick="scrollToEvents()">
+            EVENTS HERE!
+          </button>
           <button type="button" id="getinvolved">GET INVOLVED</button>
         </div>
       </div>
       <img src="assets/teampic.png" id="teampic" />
     </div>
-    <div class="upcomingevents">
+    <div class="upcomingevents" id="events">
       <h1>UPCOMING EVENTS</h1>
       <iframe
         src="https://calendar.google.com/calendar/embed?height=700&wkst=1&ctz=America%2FNew_York&bgcolor=%23ffffff&showTitle=0&showPrint=0&showCalendars=0&src=Y19jOWRkM2E1M2Y1OTAyMmJjMTVlZmQ5NTk0ZWQ4NDVhYTgxZDdjMzNkMDNjNTUwOWI5MzI4YWZkZDBkZTUzNDJlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23B39DDB"
@@ -57,12 +59,14 @@
         scrolling="no"
       ></iframe>
     </div>
-    <div class="socialmediapreview">
+    <div class="socialmediaheader">
       <h1>
         <a href="https://instagram.com/dartmouthwics/" target="_blank"
           >@dartmouthWiCS on Instagram</a
         >
       </h1>
+    </div>
+    <div class="socialmediapreview">
       <!-- turn into carousel eventually -->
       <div id="instagram" class="socialmediaposts"></div>
     </div>
