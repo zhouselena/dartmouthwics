@@ -172,4 +172,10 @@ iframe {
   color: #ffa7e5;
 }
 
+.socialmediaposts {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 5%;
+}
+
 /**************************** our team ****************************/
