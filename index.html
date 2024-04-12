@@ -20,10 +20,12 @@
         <img src="assets/wicslogo.png" class="logo" />
         <li class="selected"><a href="index.html">Home</a></li>
         <li><a href="team.html">Our Team</a></li>
-        <li><a href="javascript:scrollToEvents()">Events</a></li>
+        <li><a href="javascript:scrollToSection('events')">Events</a></li>
         <li><a href="resources.html">Resources</a></li>
         <li>
-          <button type="button">CONTACT US</button>
+          <button type="button" onclick="scrollToSection('contact')">
+            CONTACT US
+          </button>
         </li>
       </ul>
     </div>
@@ -71,7 +73,7 @@
     <div class="socialmediapreview">
       <div id="instagram" class="socialmediaposts"></div>
     </div>
-    <div class="footer">
+    <div class="footer" id="contact">
       <div class="contactus">
         <h3>Contact Us.</h3>
         <ul class="socialbuttons">

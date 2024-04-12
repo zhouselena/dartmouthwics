@@ -41,6 +41,11 @@ img {
   object-fit: contain;
 }
 
+.underconstruction {
+  padding: 120px 20% 30% 20%;
+  color: #00713d;
+}
+
 /**************************** global navigation bar ****************************/
 
 .logo {
@@ -96,12 +101,15 @@ img {
   row-gap: 50px;
 }
 
+.footer h3 {
+  padding-bottom: 25px;
+}
+
 .socialbuttons {
   padding: 0;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   justify-content: flex-start;
   column-gap: 10px;
 }
@@ -167,6 +175,22 @@ button#getinvolved:hover {
   color: #04502f;
 }
 
+@media (max-width: 850px) {
+  .aboutsection {
+    flex-direction: column;
+  }
+
+  .aboutsection img {
+    min-width: 100%;
+    flex: 1 1 100%;
+    flex-shrink: 0;
+  }
+
+  .textstack {
+    flex: 2;
+  }
+}
+
 /* upcoming events section */
 
 .upcomingevents {
@@ -195,6 +219,10 @@ iframe {
   padding: 120px 7% 20px 7%;
 }
 
+.socialmediaheader a:hover {
+  color: #ffa7e5;
+}
+
 .socialmediaheader a {
   text-decoration: none;
   color: #00713d;
@@ -206,13 +234,9 @@ iframe {
   flex-flow: column nowrap;
   row-gap: 40px;
   color: #00713d;
-  padding: 50px 7% 85px 7%;
+  padding: 50px 7% 90px 7%;
   align-items: flex-start;
   overflow-x: auto;
-}
-
-.socialmediapreview a:hover {
-  color: #ffa7e5;
 }
 
 .socialmediaposts {

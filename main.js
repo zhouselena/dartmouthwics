@@ -1,7 +1,7 @@
-// scroll to events
+// scroll to section
 
-function scrollToEvents() {
-  const section = document.getElementById("events");
+function scrollToSection(id) {
+  const section = document.getElementById(id);
   section.scrollIntoView();
 }
 

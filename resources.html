@@ -8,9 +8,70 @@
       content="Women in Computer Science @ Dartmouth College"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar"></div>
+    <div class="navbar">
+      <ul>
+        <img src="assets/wicslogo.png" class="logo" />
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li class="selected"><a href="resources.html">Resources</a></li>
+        <li>
+          <button type="button" onclick="scrollToSection('contact')">
+            CONTACT US
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <h1 class="underconstruction">Under construction...</h1>
+
+    <div class="footer" id="contact">
+      <div class="contactus">
+        <h3>Contact Us.</h3>
+        <ul class="socialbuttons">
+          <li>
+            <a href="https://instagram.com/dartmouthwics" target="_blank">
+              <img src="assets/instagram.png" class="socialmediabutton" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/dartmouthwics/" target="_blank">
+              <img src="assets/facebook.png" class="socialmediabutton" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://web.groupme.com/join_group/45904252/ilCZgi"
+              target="_blank"
+            >
+              <img src="assets/groupme.png" class="socialmediabutton" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:Women.in.Computer.Science@dartmouth.edu"
+              target="_blank"
+            >
+              <img src="assets/email.png" class="socialmediabutton" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p>Made with <span>&#x2764;&#xFE0F;</span> by Dartmouth WiCS 2024.</p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
 </html>
