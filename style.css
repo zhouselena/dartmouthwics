@@ -93,6 +93,54 @@ img {
   color: #00713d;
 }
 
+.hamburgernavbar,
+.invisbar {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .navbar ul {
+    display: none;
+  }
+  .hamburgernavbar {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .invisbar {
+    display: inline;
+    width: 120%;
+  }
+  button#hamburger {
+    display: block;
+    font-size: 30px;
+    background-color: transparent;
+    color: #00713d;
+  }
+  button#hamburger:hover {
+    box-shadow: none;
+    color: #ffa7e5;
+    transition-duration: 0.1s;
+  }
+}
+
+.dropdown {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  align-content: center;
+  z-index: 1;
+  padding: 10px;
+  background-color: #fff1fb;
+}
+
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: max-content;
+  padding: 10px;
+}
+
 /**************************** global footer ****************************/
 
 .footer {

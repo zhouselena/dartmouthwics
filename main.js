@@ -1,5 +1,21 @@
 // hamburger menu
 
+$("#hamburger").on("click", function (e) {
+  var hamburgerPosition = $(this).offset();
+  var dropdownTop = hamburgerPosition.top + $(this).outerHeight();
+  var dropdownLeft = hamburgerPosition.left - 80;
+  $(".dropdown").css({
+    top: dropdownTop,
+    left: dropdownLeft,
+  });
+
+  $(".dropdown").slideToggle();
+});
+
+$(window).resize(function () {
+  $(".dropdown").hide();
+});
+
 // scroll to section
 
 function scrollToSection(id) {
