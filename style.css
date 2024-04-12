@@ -77,10 +77,12 @@ img {
   color: #00713d;
 }
 
-/**************************** about us section ****************************/
+/**************************** homepage ****************************/
+
+/* about us section */
 
 .aboutsection {
-  padding: 40px 12.5%;
+  padding: 60px 12.5% 150px 12.5%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -107,6 +109,7 @@ img {
 }
 
 .buttonstack {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
@@ -130,3 +133,43 @@ button#getinvolved {
 button#getinvolved:hover {
   color: #04502f;
 }
+
+/* upcoming events section */
+
+.upcomingevents {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 40px;
+  color: #00713d;
+  background: rgba(0, 113, 61, 0.1);
+  padding: 120px 12.5%;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+/* instagram section */
+
+.socialmediapreview {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 40px;
+  color: #00713d;
+  padding: 120px 12.5%;
+  align-items: flex-start;
+}
+
+.socialmediapreview a {
+  text-decoration: none;
+  color: #00713d;
+  transition-duration: 0.1s;
+}
+
+.socialmediapreview a:hover {
+  color: #ffa7e5;
+}
+
+/**************************** our team ****************************/
