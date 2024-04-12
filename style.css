@@ -1,20 +1,55 @@
 /**************************** global styling ****************************/
 
+* {
+  font-family: "JetBrains Mono";
+}
+
 .background {
   width: 100%;
   height: 100vh;
 }
 
+/**************************** general components ****************************/
+
+button {
+  background-color: #ffd7f3;
+  color: #00713d;
+  padding: 14px 26px;
+  cursor: pointer;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  transition-duration: 0.3s;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+button:hover {
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24),
+    0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
 /**************************** global navigation bar ****************************/
 
 .logo {
-  width: 100px;
+  width: 150px;
 }
 
 .navbar {
-  width: 75%;
+  width: 85%;
   margin: auto;
-  padding: 35px 0;
+  padding: 45px 0;
+  font-size: 18px;
+  font-weight: bolder;
+  transition-duration: 0.3s;
+  text-transform: uppercase;
 }
 
 .navbar ul {
@@ -27,14 +62,71 @@
 .navbar ul li {
   list-style: none;
   white-space: nowrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
   color: rgb(0, 0, 0);
-  text-transform: uppercase;
 }
 
-.navbar ul li::after {
+.navbar ul li a:hover {
   color: #00713d;
 }
 
-.navbar ul li:hover:after {
+.navbar ul li.selected a {
   color: #00713d;
+}
+
+/**************************** about us section ****************************/
+
+.aboutsection {
+  padding: 40px 12.5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.aboutsection h1 {
+  color: #00713d;
+}
+
+.aboutsection p {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.textstack {
+  max-width: 45%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.buttonstack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  column-gap: 5%;
+  row-gap: 10px;
+}
+
+button#events {
+  background-color: black;
+  color: #ffd7f3;
+}
+
+button#events:hover {
+  color: #ffa7e5;
+}
+
+button#getinvolved {
+  color: #00713d;
+}
+
+button#getinvolved:hover {
+  color: #04502f;
 }
