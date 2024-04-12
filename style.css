@@ -86,9 +86,28 @@ img {
 /**************************** global footer ****************************/
 
 .footer {
-  margin: 0;
   padding: 100px 12.5%;
   background-color: #00713d;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+
+.socialbuttons {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.socialmediabutton {
+  max-width: 20px;
 }
 
 /**************************** homepage ****************************/
