@@ -104,6 +104,7 @@ img {
   }
   button#contactbutton {
     height: 52px;
+    padding: 14px 20px;
   }
   .navbar {
     justify-content: center;
@@ -238,7 +239,7 @@ button#getinvolved:hover {
 @media (max-width: 850px) {
   .aboutsection {
     flex-direction: column;
-    padding: 0 12.5%;
+    padding: 0 12.5% 100px 12.5%;
   }
 
   .aboutsection img {
