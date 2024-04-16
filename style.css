@@ -102,6 +102,13 @@ img {
   .navbar ul {
     display: none;
   }
+  button#contactbutton {
+    height: 52px;
+  }
+  .navbar {
+    justify-content: center;
+    align-items: center;
+  }
   .hamburgernavbar {
     display: flex;
     flex-flow: row nowrap;
