@@ -238,6 +238,7 @@ button#getinvolved:hover {
 @media (max-width: 850px) {
   .aboutsection {
     flex-direction: column;
+    padding: 0 12.5%;
   }
 
   .aboutsection img {

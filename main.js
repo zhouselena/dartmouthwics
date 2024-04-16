@@ -307,4 +307,5 @@ fetch("data.json")
   })
   .then((data) => {
     embedIGPosts(data);
+    window.instgrm.Embeds.process();
   });
